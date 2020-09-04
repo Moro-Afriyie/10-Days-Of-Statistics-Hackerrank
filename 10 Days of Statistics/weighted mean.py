@@ -1,0 +1,5 @@
+x = int(input())
+N = list(map(int, input().split()))
+W = list(map(int, input().split()))
+weighted_mean = sum(N * W for N, W in zip(N, W)) / sum(W)
+print('{:.1f}'.format(weighted_mean))
